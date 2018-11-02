@@ -1,0 +1,262 @@
+@font-face
+{
+    /* font-family:Kids-Regular;
+    src: url(../fonts/Kids-Regular.ttf); */
+    font-family: akaDora;
+    src: url(../fonts/akaDora.ttf);
+}
+
+body{
+   padding: 0;
+   margin: 0;
+   background-color: rgba(0,179,255,1);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+.banner{
+  background-color:linear-gradient(to right rgba(105,213,225,0),rgba(105,213,225,1));
+  margin: 0;
+  padding: 0;
+
+}
+.banner h1{
+  text-align:center;
+  font-size: 2em;
+  font-family:monospace;
+}
+.banner p{
+  text-align: center;
+  color:black;
+}
+nav{
+  height:100px;
+  text-align: center;
+  background: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  width: 99%;
+  margin: auto;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 5px;
+  transform: skew(-6deg);
+  border-radius: 3px 0 3px 0;
+
+}
+nav ul {
+  display: inline-flex;
+  line-height: 75px;
+  transform: skew(6deg);
+}
+nav ul li{
+  list-style: none;
+  padding-right: 25px;
+}
+
+nav ul li a {
+  font-size: 1.4em;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+
+}
+nav ul li a:hover{
+  color:black;
+  text-decoration: underline;
+}
+.notes{
+  text-align: center;
+  font-family:akaDora;
+  font-size: 1.2rem;
+}
+.note{
+  width:240px;
+  height:260px;
+  padding: 22px;
+  border: 1px solid;
+  background-color:#fed46e;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  background-image: linear-gradient(to top right,
+    #fed46e 60%,
+    #bf9f53
+    );
+    display: inline-block;
+}
+.note1{
+  transform: skew(-2deg,-1deg);
+}
+.note2{
+  z-index: 10;
+  transform: skew(5deg,-5deg);
+
+}
+#news{
+    display:inline-flex;
+    margin-bottom: 10px;
+}
+.news_list{
+  width: 90%;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color:white;
+  box-shadow: 1px 1px 2px;
+  border: 8px solid;
+  border-color: rgba(100,220,243);
+  border-radius: 5px;
+}
+
+.blogs{
+  border:10px solid;
+  border-color: rgba(100,220,243);
+  border-radius: 5px;
+  width:90%;
+  margin:auto;
+  background-color:white;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 2px;
+}
+.blogs h2{
+  text-align: center;
+  font-size: 1.3em;
+}
+.blogs h1{
+  text-align: center;
+  font-size: 1.5em;
+  font-style: italic;
+}
+.blogs .blog{
+  width: 90%;
+  margin: auto;
+}
+
+.blogs p.time{
+  text-align: center;
+}
+code{
+  background-color:rgba(250,0,250,0.4);
+}
+#poems{
+  margin-bottom: 10px;
+  margin-left: 52px;
+  margin-right: 52px;
+  display: flex;
+  border-radius: 3px;
+  text-align: center;
+  background-color:white;
+  border: 10px solid;
+  border-color: rgba(100,220,243);
+  box-shadow: 1px 1px 1px 1px;
+  transform: skew(-2deg);
+}
+.poem{
+  width: 900px;
+  transform: skew(2deg);
+}
+.poet{
+  border-left: 1px solid;
+  border-color: red;
+  transform: skew(2deg);
+
+}
+.poet img{
+  width: 300px;
+  height:300px;
+  border-bottom: 2px solid;
+  border-color:rgba(100,220,243);;
+  box-shadow: 5px 3px 3px;
+
+}
+.poet figure figcaption p{
+  color: rgb(250,0,255);
+}
+footer{
+  margin-bottom: -15px;
+  text-align: center;
+  background-color: rgb(0,250,83);
+  box-shadow: 3px 3px 3px;
+}
+
+#cards{
+  width: 98%;
+  margin: auto;
+  columns: 4;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #24170b,
+    #24170b 6px,
+    #291A0b 8px,
+    #3e2010 10px,
+    #281A11 11px,
+    #281A11 12px,
+    #25170a 18px,
+    #180f06 24px,
+    #180f05 24px,
+    #180f05 28px);
+    border-bottom: 40px solid;
+    border-color: red;
+    border-top: 25px solid yellow;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 5px 3px 3px;
+}
+.card{
+  width: 290px;
+  height: 200px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 10px;
+  box-shadow:  1px 2px 5px rgba(0,0,0,0.8);
+  width: 85%;
+  margin: auto;
+}
+.card:nth-child(1){
+  background-image: url(../pics/RAM.jpg);
+}
+.card:nth-of-type(2){
+  background-image: url(../pics/mib.jpg);
+}
+.card:nth-of-type(3){
+  background-image: url(../pics/ItisMyLife.jpg);
+}
+.card:nth-of-type(4){
+  background-image: url(../pics/rockandroll.jpg);
+}
+.card:nth-of-type(5){
+  background-image: url(../pics/ruby.jpg);
+}
+.card:nth-of-type(6){
+  background-image: url(../pics/Joanne.jpg);
+}
+.card:nth-of-type(7){
+  background-image: url(../pics/cityofstars.jpg);
+}
+.card:nth-of-type(8){
+  background-image: url(../pics/mysong.jpg);
+}
+.card:nth-of-type(9){
+  background-image: url(../pics/Rocky.jpg);
+}
+.card:nth-of-type(10){
+  background-image: url(../pics/beginagain.jpg);
+}
+.card:nth-of-type(11){
+  background-image: url(../pics/eagles.jpg);
+}
+.card:nth-of-type(12){
+  background-image: url(../pics/EffraParade.jpg);
+}
+.card:nth-of-type(13){
+  background-image: url(../pics/mj.jpg);
+}
+.card:nth-of-type(14){
+  background-image: url(../pics/MusicAndPhotos.jpg);
+}
+.card:nth-of-type(15){
+  background-image: url(../pics/Myth.jpg);
+}
+.card:nth-of-type(16){
+  background-image: url(../pics/sungoes.jpg);
+}
