@@ -1,16 +1,12 @@
 @font-face
 {
-    font-family: akaDora;
-    src: url(../fonts/akaDora.ttf);
+    font-family:alice;
+    src: url(../fonts/Alice.ttf);
 }
 
 body{
    padding: 0;
    margin: 0;
-   background-color: rgba(0,179,255,1);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
 }
 .banner{
   margin: 0;
@@ -24,8 +20,8 @@ body{
 }
 .banner h1{
   text-align:center;
-  font-size: 4em;
-  font-family:monospace;
+  font-size: 4.3em;
+  font-family:Alice;
 }
 .banner p{
   text-align: center;
@@ -34,16 +30,10 @@ body{
 nav{
   height:100px;
   text-align: center;
-  background: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* Safari 5.1 - 6.0 */
-  background: -o-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* Opera 11.1 - 12.0 */
-  background: -moz-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* Firefox 3.6 - 15 */
-  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
   width: 99%;
   margin: auto;
   margin-bottom: 20px;
-  box-shadow: 5px 5px 5px;
-  transform: skew(-6deg);
-  border-radius: 3px 0 3px 0;
+  border-bottom: 2px solid;
 
 }
 nav ul {
@@ -57,70 +47,45 @@ nav ul li{
 }
 
 nav ul li a {
-  font-size: 1.4em;
+  font-size:2em;
   list-style: none;
   text-decoration: none;
-  color: white;
 
 }
 nav ul li a:hover{
   color:black;
   text-decoration: underline;
 }
-.notepad{
-  text-align: center;
-  font-family:akaDora;
-  font-size: 1.2rem;
-}
-.note{
-  width:240px;
-  height:260px;
-  padding: 22px;
-  border: 1px solid;
-  background-color:#fed46e;
-  box-sizing: border-box;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-  background-image: linear-gradient(to top right,
-    #fed46e 60%,
-    #bf9f53
-    );
-    display: inline-block;
-}
-.note1{
-  transform: skew(-2deg,-1deg);
-}
-.note2{
-  z-index: 10;
-  transform: skew(5deg,-5deg);
-
-}
 #news{
     display:inline-flex;
     margin-bottom: 10px;
 }
-.news_list{
-  width: 90%;
+.lastest_news {
+  width: 60%;
   margin: auto;
   margin-top: 5px;
   margin-bottom: 5px;
-  background-color:white;
-  box-shadow: 1px 1px 2px;
-  border: 8px solid;
-  border-color: rgba(100,220,243);
-  border-radius: 5px;
 }
-.news_list ul li{
+.title{
+  width:80%;
+  height: 54px;
+  margin: auto;
+  border-bottom: 1px solid red;
+}
+.title h2{
+  text-align: center;
+  font-size: 3em;
+}
+.lastest_news ul li{
   list-style: none;
 }
-.news_list ul li a {
+.lastest_news ul li a {
   text-decoration: none;
 }
 
+
 .blogs{
-  border:10px solid;
-  border-color: rgba(100,220,243);
-  border-radius: 5px;
-  width:90%;
+  width:98%;
   margin:auto;
   background-color:white;
   margin-bottom: 10px;
@@ -153,21 +118,14 @@ code{
   display: flex;
   border-radius: 3px;
   text-align: center;
-  background-color:white;
-  border: 10px solid;
-  border-color: rgba(100,220,243);
   box-shadow: 1px 1px 1px 1px;
-  transform: skew(-2deg);
 }
 .poem{
-  width: 900px;
-  transform: skew(2deg);
+  width: 1000px;
   font-size: 1.3rem;
 }
 .poet{
-  border-left: 1px solid;
-  border-color: red;
-  transform: skew(2deg);
+  border-left: 1px dashed;
   font-size: 1.2rem;
 
 }
@@ -180,12 +138,11 @@ code{
 
 }
 .poet figure figcaption p{
-  color: rgb(250,0,255);
+
 }
 footer{
   margin-bottom: -15px;
   text-align: center;
-  background-color: rgb(0,250,83);
   box-shadow: 3px 3px 3px;
 }
 
@@ -205,9 +162,9 @@ footer{
     #180f06 24px,
     #180f05 24px,
     #180f05 28px);
-    border-bottom: 40px solid;
+    border-bottom: 35px solid;
     border-color: red;
-    border-top: 25px solid yellow;
+    border-top: 25px solid red;
     border-radius: 5px 5px 5px 5px;
     box-shadow: 5px 3px 3px;
 }
