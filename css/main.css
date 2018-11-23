@@ -45,7 +45,6 @@ body{
   font-size: 1.5em;
   font-style: italic;
   font-weight: bold;
-
 }
 nav{
   height:70px;
@@ -57,7 +56,7 @@ nav{
   padding-left: 0px;
   padding-right: 0px;
 
-  background-color: orange;
+  background-color: Black;;
 
 }
 nav ul {
@@ -73,11 +72,18 @@ nav ul li a {
   font-size:1.8em;
   list-style: none;
   text-decoration: none;
-  color: Black;
+  color: white;
+
 }
 nav ul li a:hover{
   color:red;
-  text-decoration: underline;
+  background-color:white;
+}
+
+nav ul li a img{
+  width:20px;
+  height:20px;
+  padding-right:2px;
 }
 #news{
     display:inline-flex;
