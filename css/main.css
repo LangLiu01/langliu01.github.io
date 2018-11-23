@@ -21,9 +21,7 @@ body{
   background-size:cover;
   background-repeat: no-repeat;
 }
-/* .logo{
-  margin-left:80%;
-} */
+
 .banner h1{
   text-align:center;
   font-size: 4em;
@@ -85,26 +83,39 @@ nav ul li a img{
   height:20px;
   padding-right:2px;
 }
+.bloqute{
+  padding-top: 30px;
+  width: 14%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bloqute p{
+  text-align: center;
+}
+
 #news{
-    display:inline-flex;
     margin-bottom: 10px;
 }
 .lastest_news {
-  display:flex;
-  columns:5;
+  width: 50%;
+  -webkit-column-count:2;
+  -moz-column-count:2;
+  column-count:2;
+  margin-left: auto;
+  margin-right: auto;
 }
 .lastest_news .ullist{
-  width: 360px;
+  padding-top: 1px;
 }
 .title{
   width:66%;
   height: 54px;
   margin: auto;
-  border-bottom: 1px solid red;
+  border-bottom: 3px solid red;
 }
 .title h2{
   text-align: center;
-  font-size: 3em;
+  font-size: 2.8em;
 }
 .lastest_news ul li{
   list-style: none;
