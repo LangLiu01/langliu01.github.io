@@ -10,7 +10,7 @@ body{
 
 }
 .banner{
-  width:698px;
+  width:800px;
   height:465px;
   margin-left: auto;
   margin-right:auto;
@@ -25,16 +25,15 @@ body{
 .banner h1{
   text-align:center;
   font-size: 4em;
-  font-family:Alice;
+  /* font-family:Alice; */
   color:red;
-  padding-top:135px;
+  padding-top:100px;
 }
 .banner h2{
   text-align:center;
   font-size: 3em;
-  font-family:Alice;
   color:red;
-  margin-top: -50px;
+  margin-top: -40px;
 }
 .banner p{
   text-align:center;
@@ -105,13 +104,12 @@ nav ul li a img{
   margin-right: auto;
 }
 .lastest_news .ullist{
-  padding-top: 1px;
+  padding-top: 2px;
 }
 .title{
-  width:66%;
+  width:97%;
   height: 54px;
   margin: auto;
-  border-bottom: 3px solid red;
 }
 .title h2{
   text-align: center;
@@ -120,38 +118,36 @@ nav ul li a img{
 .lastest_news ul li{
   list-style: none;
 }
+.lastest_news ul,li,a{
+    font-size: 1.1em;
+}
 .lastest_news ul li a {
   text-decoration: none;
 }
+.musicbox{
+  display: flex;
 
-.blogs{
-  width:98%;
-  margin:auto;
-  background-color:white;
-  margin-bottom: 10px;
-  box-shadow: 1px 1px 2px;
 }
-.blogs h2{
-  text-align: center;
-  font-size: 1.3em;
+.musicbox:nth-child(2){
+  background-color: #bfd5e3;
 }
-.blogs h1{
-  text-align: center;
-  font-size: 1.5em;
-  font-style: italic;
+.musicbox:nth-child(3){
+  flex-direction: row-reverse;
+  background-color: #b71214;
 }
-.blogs .blog{
-  width: 90%;
-  margin: auto;
+.musicbox:nth-child(4){
+  background-color: #b1ac86;
 }
-
-.blogs p.time{
+.musicbox img{
+  width: 450px;
+  height: 450px;
+  border-radius: 3px;
+}
+.musicbox_figcaption p{
+  font-size: 1.2rem;
+  max-width: 470px;
   text-align: center;
 }
-code{
-  background-color:rgba(250,0,250,0.4);
-}
-
 footer{
   margin-bottom: -15px;
   text-align: center;

@@ -39,13 +39,13 @@
 			<div class="ullist">
 				<ul >笔记
 					<li>
-						<ul>Git
-							<li>Git 安装</li>
-							<li>Git 配置</li>
+						<ul>+Git
+							<li><a href="blog/gitinstall.html"> Git 安装</a></li>
+							<li><a href="blog/gitsetting.html"> Git 配置</a></li>
 						</ul>
 					</li>
 					<li>
-						<ul>JavaScript
+						<ul>+JavaScript
 							<li>JavaScript基础复习</li>
 							<li>函数、闭包</li>
 							<li>对象</li>
@@ -54,29 +54,26 @@
 						</ul>
 				</ul>
 			</div>
+			<ul class="ullist">Web工具箱
+				<li>
+					<ul>+设计工具
+						<li>颜色拾取器</li>
+						<li>配色指南</li>
+						<li>网页实例</li>
+					</ul>
+				</li>
+				<li>
+					<ul>+编译器
+						<li> <a href="www.babeljs.io">Babel下一代JS编译器</a> </li>
+					</ul>
+				</li>
+				<li>
+					<ul>+其他工具
+						<li> <a href="www.Limesurvey.org">LimeSurvey 免费在线问卷调查</a> </li>
+					</ul>
+				</li>
+			</ul>
 
-			<div class="ullist">
-				<ul class="ullist">Web工具箱
-					<li>
-						<ul>设计工具
-							<li>颜色拾取器</li>
-							<li>配色指南</li>
-							<li>网页实例</li>
-						</ul>
-					</li>
-					<li>
-						<ul>编译器
-							<li> <a href="www.babeljs.io">Babel下一代JS编译器</a> </li>
-						</ul>
-					</li>
-					<li>
-						<ul>其他类型工具
-							<li> <a href="www.Limesurvey.org">LimeSurvey 免费在线问卷调查</a> </li>
-						</ul>
-					</li>
-				</ul>
-
-			</div>
 		</div>
 		<!--End of lastest new-->
 	</div>
@@ -84,81 +81,66 @@
 	<section id= "news" role="main">
 
 		<section class="blogs">
-			<article class="blog">
-				<h1>Git笔记:安装</h1>
-				<p class="time"><time datetime="2018-11-1">2018/11/1</time></p>
-				<p>这是我在学习Git的时候作的一些笔记，好记性不如烂笔头，所以我把它写这这里，以便将来复习的时候作参考</p>
-				<p>题外话:我实在是太喜欢Lady Gaga 的那张专辑Joanne了，你甚至可以在那堆小卡片里找到这张专辑的图片...好啦不说了，进入正题</p>
-				<h2>关于版本控制系统VCS:</h2>
-				<p>版本控制系统的简洁定义是，一个可以用于管理和追踪软件代码或者其他内容的不同版本的工具。它常常用于开发及维护代码，读取代码的不同版本
-					并记录所有的修改记录，所以可以追查到在哪个版本引入了Bug,并且在bug排除之前回滚到之前正常的版本。
-				</p>
-				<p>一句话介绍Git:Git是一种适用于分布式、多人协同开发的版本控制系统。<br>要想知道更多关于Git是如何诞生的历史故事，访问git-scm的官方
-				网址.(注：git-scm由于在国内不明原因，访问常常不稳定，要多试几次)</p>
-				<h2>安装</h2>
-				<p>在这篇博客里，我主要会谈到linux下尤其是Ubuntu下的安装，因为我用的是Ubuntu,而且这又是我的博客，记的是我的笔记。
-				</p>
-				<p>方法1： 编译二进制发行版</p>
-				<p>最困难的安装方法，适合那些对linux系统环境非常熟悉的大佬使用，对我这种小白来说，还是算啦吧，我可不想在编译出错的时候对一大堆
-					看不懂的环境变量报错信息发呆。(此方法暂无更多信息)
-				</p>
-				<p>方法2：用Ubuntu的包管理器轻松安装</p>
-				<p>首先要添加依赖关系:</p>
-				<code>sudo add-apt-repository ppa:git-core/ppa apt update</code>
-				<code>apt install git</code>
-				<p>如果系统自带了Git使用下面的命令把git升级成最新版本：</p>
-				<code>git clone https://github.com/git/git</code>
-				<p>但是经我自己试验，这个方法十之八九是行不通的，受限于糟糕的网络环境，clone过程中经常连接中断，很是烦人。要是有免费又稳定的VPN就好了</p>
-				<h2>配置Git</h2>
-				<p>首先要设置用户信息，这样每次提交的时候就不用重复输入这些信息了</p>
-				<code>git config --global user.name "Bob Smith"</code>
-				<code>git config --global user.email "bobsmith@163.com"</code>
-				<p>然后还可以配置linux下你最喜欢的文本编辑器，通常是Vim/Vi/Emacs，但是我还不会用这些牛逼的编辑器，所以下面这条命令也就没有试过</p>
-				<code>git config--global core.editor emacs/vim</code>
-				<p>最后，我们来检查一下配置信息，看看还有没有要修改的</p>
-				<code>git config --list</code>
-				<h2>帮助</h2>
-				<p>谁都有需要帮助的时候，下面的这些命令可以让你查看用户手册</p>
-				<code>git help<verb></code>
-				<p><verb>是指某一条具体的命令,还有别忘了这是linus Towards开发的linux系统，你可以随时用man来查看任意一个命令的帮助手册</p>
-				<code>man git-<verb></code>
-				<p>写在最后：要是遇到某些特定问题无法解决，这种时候要请教比我们强的多的人。github 上面的issue，
-					stackflow ，linux.com都可以请教别人，要是实在不行，还有百度知道这种平台可以请教问题，这个世界上还是有好多热心人的。
-				</p>
-			</article>
-			<article class="blog">
-					<h1>Git笔记：基本命令</h1>
-					<p><time datetime="2018/11/2">2018/11/2</time> </p>
-					<p>今天要写的是关于git的基本命令，但是有一个部分我可能没法把它写好，就是关于文件在不同情况下的状态，所以今天的博客挖了一个坑，等哪天图画好了我
-						再补上。
-					</p>
-					<p>TIPS：关于文件状态的知识你还是需要访问git-scm，并且阅读Pro Git Book (ebook)PDF版,有汉化。那本书讲解得十分详细。</p>
-					<h2>初始化仓库(repository)</h2>
-					<p>首先选中现有的工作目录或者空目录</p>
-					<code>git init</code>
-					<p>然后如果是选择了工作目录，想要把所有文件添加到git，</p>
-					<code>git add*</code>
-					<p>然后添加LINCENSE文件，授权协议的历史非常长而且很复杂，详细内容请自行百度，</p>
-					<code>git add LINCENSE</code>
-					<p>如果在添加过程中，一些程序自动生成的“副产品”不想添加到git里面，创建一个.gitignore文件</p>
-					<code>cat .gitignore</code>
-					<p>在文件中添加<code>*.[txt]</code> 那么以txt结尾的文件在添加时会被pass掉。</p>
-					<h2>Git clone克隆/复制</h2>
-					<code>git clone [url]</code>
-					<h2>检查文件状态status(坑)</h2>
-					<p>经常检查文件的状态信息，可以避免无法提交或者提交失败的尴尬</p>
-					<code>git status</code>
-					<p><code>git status-s</code>可以输出更为简洁的信息 </p>
-					<p>在git 中文件一共有三种不同的状态可能性：未添加、已添加在暂存区、提交区，要经常检查文件的状态信息确保全部提交</p>
-					<h2>总结:基本流程</h2>
-					<p>添加文件 <code> git add</code></p>
-					<p>提交到暂存区<code>git commit -m "beta version"</code>后面输入改动信息，不输入改动信息无法正确提交 </p>
-					<p>推送到远程仓库 <code>git push orign master</code> </p>
-					<p>什么是远程仓库？这里先挖个坑留着，以后再填。</p>
-			</article>
+
+
 		</section>
 
 	</section>
+
+	<div class="fun">
+		<div class="title">
+			<h2>My Favorite</h2>
+		</div>
+		<div class="musicbox">
+		<div class="musicbox_img">
+				<img src="pics/Joanne.jpg" alt="Joanne by Lady Gaga" >
+		</div>
+			<div class="musicbox_figcaption">
+				<figcaption>
+					<p>Joanne is the fifth studio album by American singer Lady Gaga.
+						The album era marked a change in Gaga's visual appearance, embodying a country-oriented look,
+						 consisting mainly of a pink, wide-brimmed hat and usage of pastel colors, evoking the 1970s.
+						 The singer's experience working on the television series American Horror Story influenced the creative process of Joanne,
+						  and Gaga hearkened back to an authentic and simplistic presentation. To promote the album,
+							three singles were released: "Perfect Illusion", "Million Reasons" and the title track.
+							"Perfect Illusion" was released as the album's lead single on September 9, 2016,
+							 and reached number one in France and Spain, while "Million Reasons" reached number four in the United States.
+					</p>
+				</figcaption>
+			</div>
+
+		</div>
+		<div class="musicbox">
+			<div class="musicbox_img">
+				<img src="pics/nightshift.jpg" alt="Night Shift by Lucy Dacus ">
+			</div>
+			<div class="musicbox_figcaption">
+				<figcaption> <p>Lucy Dacus (born May 2, 1995) is an American indie rock singer-songwriter from Richmond,
+					 Virginia.She has released two critically acclaimed albums:
+					  No Burden (2016) and Historian (2018).Dacus first performed in New York in March 2015.[5]
+						 Her first single, "I Don't Wanna Be Funny Anymore," premiered in November 2015. Her debut album,
+						  No Burden, was produced in Nashville by her hometown friends, Berklee College of Music graduate Collin Pastore
+							and Oberlin Conservatory of Music graduate Jacob Blizard, and was originally released digitally, on CD, and on
+							 vinyl via Richmond's EggHunt Records February 26, 2016. No Burden was engineered and mixed by Collin Pastore.</p> </figcaption>
+			</div>
+		</div>
+		<div class="musicbox">
+			<div class="musicbox_img">
+				<img src="pics/highashope.jpg" alt="High as Hope by Florence and the Machine">
+			</div>
+			<div class="musicbox_figcaption">
+				<figcaption> <p>High as Hope is the fourth studio album by the English indie rock band Florence and the Machine,
+					 released on 29 June 2018 by Republic Records[5] and Virgin EMI Records.[6]
+					 It was preceded by the singles "Sky Full of Song" and "Hunger".
+					 "Patricia" was released as the third single of the album on 10 August, 2018.
+				 The album was executively produced by Florence Welch herself, along with Emile Haynie.
+				  Following How Big, How Blue, How Beautiful (2015), High as Hope features more minimalist,
+					 stripped-down productions, and explores themes of heartache, family, and finding comfort in loneliness.
+					  The album received positive reviews upon release,
+						 with music critics lauding Welch's vocal performance and personal lyricism.</p> </figcaption>
+			</div>
+		</div>
+	</div>
 	<!--End of main-->
 	<footer role="contentinfo">
 		<p><small>This site is designed by liulang,if you want to give feedback ,<br>

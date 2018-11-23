@@ -1,0 +1,32 @@
+.blog{
+  width:95%;
+  margin:auto;
+  background-color:white;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 2px;
+
+}
+.blog h2{
+  text-align: center;
+  font-size: 1.3em;
+}
+.blog h1{
+  text-align: center;
+  font-size: 1.5em;
+  font-style: italic;
+}
+.blog p{
+  padding-left: 5px;
+}
+
+.blog p.time{
+  text-align: center;
+}
+code{
+  background-color:rgba(250,0,250,0.4);
+  margin-left:5%;
+}
+.blog h1,h2,p{
+  width: 90%;
+  margin: auto;
+}
