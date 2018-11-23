@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Git 安装</title>
+    <link rel="stylesheet" href="../css/blog.css">
+  </head>
+
+  <body>
+    <article class="blog">
+      <h1>Git笔记:安装</h1>
+      <p class="time"><time datetime="2018-11-1">2018/11/1</time></p>
+      <p>这是我在学习Git的时候作的一些笔记，好记性不如烂笔头，所以我把它写这这里，以便将来复习的时候作参考</p>
+      <p>题外话:我实在是太喜欢Lady Gaga 的那张专辑Joanne了，你甚至可以在那堆小卡片里找到这张专辑的图片...好啦不说了，进入正题</p>
+      <h2>关于版本控制系统VCS:</h2>
+      <p>版本控制系统的简洁定义是，一个可以用于管理和追踪软件代码或者其他内容的不同版本的工具。它常常用于开发及维护代码，读取代码的不同版本
+        并记录所有的修改记录，所以可以追查到在哪个版本引入了Bug,并且在bug排除之前回滚到之前正常的版本。
+      </p>
+      <p>一句话介绍Git:Git是一种适用于分布式、多人协同开发的版本控制系统。<br>要想知道更多关于Git是如何诞生的历史故事，访问git-scm的官方
+      网址.(注：git-scm由于在国内不明原因，访问常常不稳定，要多试几次)</p>
+      <h2>安装</h2>
+      <p>在这篇博客里，我主要会谈到linux下尤其是Ubuntu下的安装，因为我用的是Ubuntu,而且这又是我的博客，记的是我的笔记。
+      </p>
+      <p>方法1： 编译二进制发行版</p>
+      <p>最困难的安装方法，适合那些对linux系统环境非常熟悉的大佬使用，对我这种小白来说，还是算啦吧，我可不想在编译出错的时候对一大堆
+        看不懂的环境变量报错信息发呆。(此方法暂无更多信息)
+      </p>
+      <p>方法2：用Ubuntu的包管理器轻松安装</p>
+      <p>首先要添加依赖关系:</p>
+      <code>sudo add-apt-repository ppa:git-core/ppa apt update</code>
+      <code>apt install git</code>
+      <p>如果系统自带了Git使用下面的命令把git升级成最新版本：</p>
+      <code>git clone https://github.com/git/git</code>
+      <p>但是经我自己试验，这个方法十之八九是行不通的，受限于糟糕的网络环境，clone过程中经常连接中断，很是烦人。要是有免费又稳定的VPN就好了</p>
+      <h2>配置Git</h2>
+      <p>首先要设置用户信息，这样每次提交的时候就不用重复输入这些信息了</p>
+      <code>git config --global user.name "Bob Smith"</code>
+      <code>git config --global user.email "bobsmith@163.com"</code>
+      <p>然后还可以配置linux下你最喜欢的文本编辑器，通常是Vim/Vi/Emacs，但是我还不会用这些牛逼的编辑器，所以下面这条命令也就没有试过</p>
+      <code>git config--global core.editor emacs/vim</code>
+      <p>最后，我们来检查一下配置信息，看看还有没有要修改的</p>
+      <code>git config --list</code>
+      <h2>帮助</h2>
+      <p>谁都有需要帮助的时候，下面的这些命令可以让你查看用户手册</p>
+      <code>git help<verb></code>
+      <p><verb>是指某一条具体的命令,还有别忘了这是linus Towards开发的linux系统，你可以随时用man来查看任意一个命令的帮助手册</p>
+      <code>man git-< verb > </code>
+      <p>写在最后：要是遇到某些特定问题无法解决，这种时候要请教比我们强的多的人。github 上面的issue，
+        stackflow ，linux.com都可以请教别人，要是实在不行，还有百度知道这种平台可以请教问题，这个世界上还是有好多热心人的。
+      </p>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Git配置</title>
+    <link rel="stylesheet" href="../css/blog.css">
+  </head>
+  <body>
+    <article class="blog">
+        <h1>Git笔记：基本命令</h1>
+        <p><time datetime="2018/11/2">2018/11/2</time> </p>
+        <p>今天要写的是关于git的基本命令，但是有一个部分我可能没法把它写好，就是关于文件在不同情况下的状态，所以今天的博客挖了一个坑，等哪天图画好了我
+          再补上。
+        </p>
+        <p>TIPS：关于文件状态的知识你还是需要访问git-scm，并且阅读Pro Git Book (ebook)PDF版,有汉化。那本书讲解得十分详细。</p>
+        <h2>初始化仓库(repository)</h2>
+        <p>首先选中现有的工作目录或者空目录</p>
+        <code>git init</code>
+        <p>然后如果是选择了工作目录，想要把所有文件添加到git，</p>
+        <code>git add*</code>
+        <p>然后添加LINCENSE文件，授权协议的历史非常长而且很复杂，详细内容请自行百度，</p>
+        <code>git add LINCENSE</code>
+        <p>如果在添加过程中，一些程序自动生成的“副产品”不想添加到git里面，创建一个.gitignore文件</p>
+        <code>cat .gitignore</code>
+        <p>在文件中添加<code>*.[txt]</code> 那么以txt结尾的文件在添加时会被pass掉。</p>
+        <h2>Git clone克隆/复制</h2>
+        <code>git clone [url]</code>
+        <h2>检查文件状态status(坑)</h2>
+        <p>经常检查文件的状态信息，可以避免无法提交或者提交失败的尴尬</p>
+        <code>git status</code>
+        <p><code>git status-s</code>可以输出更为简洁的信息 </p>
+        <p>在git 中文件一共有三种不同的状态可能性：未添加、已添加在暂存区、提交区，要经常检查文件的状态信息确保全部提交</p>
+        <h2>总结:基本流程</h2>
+        <p>添加文件 <code> git add</code></p>
+        <p>提交到暂存区<code>git commit -m "beta version"</code>后面输入改动信息，不输入改动信息无法正确提交 </p>
+        <p>推送到远程仓库 <code>git push orign master</code> </p>
+        <p>什么是远程仓库？这里先挖个坑留着，以后再填。</p>
+    </article>
+  </body>
+</html>
