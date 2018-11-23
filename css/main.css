@@ -7,39 +7,62 @@
 body{
    padding: 0;
    margin: 0;
+
 }
 .banner{
-  margin: 0;
-  padding: 0;
-
+  width:698px;
+  height:465px;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top:0px;
+  padding-top:1px;
+  background-image: url(../sources/m1882.jpeg);
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
 }
-.logo{
-  width: 18%;
-  margin: auto;
-
-}
+/* .logo{
+  margin-left:80%;
+} */
 .banner h1{
   text-align:center;
-  font-size: 4.3em;
+  font-size: 4em;
   font-family:Alice;
+  color:red;
+  padding-top:135px;
+}
+.banner h2{
+  text-align:center;
+  font-size: 3em;
+  font-family:Alice;
+  color:red;
+  margin-top: -50px;
 }
 .banner p{
-  text-align: center;
-  color:black;
+  text-align:center;
+  padding-top:120px;
+  color:white;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: bold;
+
 }
 nav{
-  height:100px;
+  height:70px;
   text-align: center;
   width: 99%;
   margin: auto;
   margin-bottom: 20px;
   border-bottom: 2px solid;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  background-color: orange;
 
 }
 nav ul {
   display: inline-flex;
-  line-height: 75px;
-  transform: skew(6deg);
+  line-height: 52px;
 }
 nav ul li{
   list-style: none;
@@ -47,13 +70,13 @@ nav ul li{
 }
 
 nav ul li a {
-  font-size:2em;
+  font-size:1.8em;
   list-style: none;
   text-decoration: none;
-
+  color: Black;
 }
 nav ul li a:hover{
-  color:black;
+  color:red;
   text-decoration: underline;
 }
 #news{
@@ -68,7 +91,7 @@ nav ul li a:hover{
   width: 360px;
 }
 .title{
-  width:80%;
+  width:66%;
   height: 54px;
   margin: auto;
   border-bottom: 1px solid red;
