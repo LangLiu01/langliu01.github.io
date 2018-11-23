@@ -10,43 +10,38 @@ body{
 
 }
 .banner{
-  width:800px;
-  height:465px;
+
+  height:500px;
   margin-left: auto;
   margin-right:auto;
   margin-top:0px;
   padding-top:1px;
-  background-image: url(../sources/m1882.jpeg);
-  background-position: center;
-  background-size:cover;
+  background-image: url(../sources/tarlorswift.jpg);
+  background-size:contain;
   background-repeat: no-repeat;
+  background-color: #252f3b;
 }
-
-.banner h1{
+.mission{
+  position: relative;
+  float: right;
+}
+.banner .mission h1{
   text-align:center;
-  font-size: 4em;
-  /* font-family:Alice; */
+  font-size: 4.2em;
   color:red;
-  padding-top:100px;
+  padding-top:35px;
 }
-.banner h2{
+.banner .mission p{
   text-align:center;
-  font-size: 3em;
-  color:red;
-  margin-top: -40px;
-}
-.banner p{
-  text-align:center;
-  padding-top:120px;
+  padding-top:50px;
   color:white;
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-style: italic;
   font-weight: bold;
 }
 nav{
   height:70px;
   text-align: center;
-  width: 99%;
   margin: auto;
   margin-bottom: 20px;
   border-bottom: 2px solid;
@@ -81,15 +76,6 @@ nav ul li a img{
   width:20px;
   height:20px;
   padding-right:2px;
-}
-.bloqute{
-  padding-top: 30px;
-  width: 14%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.bloqute p{
-  text-align: center;
 }
 
 #news{
@@ -137,6 +123,13 @@ nav ul li a img{
 }
 .musicbox:nth-child(4){
   background-color: #b1ac86;
+}
+.musicbox:nth-child(5){
+  flex-direction: row-reverse;
+  background-color: #090d0e;
+}
+.musicbox:nth-child(5) p{
+  color: white;
 }
 .musicbox img{
   width: 450px;
