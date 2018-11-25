@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>How to install Atom in Ubuntu</title>
+    <link rel="stylesheet" href="../css/blog.css">
+
+  </head>
+  <body>
+    <article class="blog">
+      <h1>Ubuntu环境下怎么安装Atom编辑器</h1>
+      <p>电脑重装了系统，以前用的工具没有保存下来，，又费了很大的力气去重新安装这些软件，想想也是挺麻烦的，
+        于是，借鉴网上的做法，我把它作为笔记写在我的博客里。
+        安装atom的过程是非常简单的，并没有我想象中的那么复杂，你只需要前往atom的官网 <a href="http:atom.io">http://atom.io </a>
+        找到download ,有两个版本 .deb 和.npm的，.deb安装较为简单
+        <code>sudo dpkg -i atom</code>
+        你只需要一行命令就可以顺利安装atom,而且如果之前有安装过atom,在安装过程中 新版本会自动覆盖旧版本，
+        非常简单。
+        .deb 是Debian系统的格式，Ubuntu也可以兼容，.npm适用于RedHat的系统，也可以强行安装在Ubuntu上，但是听说会有兼容问题,参考如下：
+        <blockquote cite="https://www.rosehosting.com/blog/how-to-install-rpm-packages-on-ubuntu/">
+          For example, RedHat-based systems use .rpm files for representing software packages, while Debian-based systems use .deb files. These file types differ from one another in their design, and cannot be installed outside of their respective type of operating systems (e.g. installing a .deb file on CentOS, or installing a .rpm file on Ubuntu).
+          However, there are ways to port these packages to other types of systems.
+        </blockquote>
+        自此，安装成功，你只需要一行命令就可以从终端打开atom
+        <code>
+          atom
+        </code>
+        为了方便以后使用，你可以右键将它添加到your Favorite.
+        顺带一提，这种通过dpkg 和apt包管理器安装的软件可以在 <code>usr/bin </code>找到
+        如果你不确定它的位置可以用 <code>whereis xx</code>命令找到它的具体位置，这在删除不想要的文件的时候尤其有用。
+
+      </p>
+      <p>End </p>
+    </article>
+  </body>
+</html>

@@ -16,7 +16,7 @@ body{
   margin-right:auto;
   margin-top:0px;
   padding-top:1px;
-  background-image: url(../sources/tarlorswift.jpg);
+  background-image: url(../pics/tarlorswift.jpg);
   background-size:contain;
   background-repeat: no-repeat;
   background-color: #252f3b;
@@ -69,7 +69,8 @@ nav ul li a {
 }
 nav ul li a:hover{
   color:red;
-  background-color:white;
+  background-color:grey;
+  border-radius: 5px;
 }
 
 nav ul li a img{
@@ -89,9 +90,7 @@ nav ul li a img{
   margin-left: auto;
   margin-right: auto;
 }
-.lastest_news .ullist{
-  padding-top: 2px;
-}
+
 .title{
   width:97%;
   height: 54px;
