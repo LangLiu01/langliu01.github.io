@@ -7,10 +7,8 @@
 body{
    padding: 0;
    margin: 0;
-
 }
 .banner{
-
   height:500px;
   margin-left: auto;
   margin-right:auto;
@@ -27,17 +25,25 @@ body{
 }
 .banner .mission h1{
   text-align:center;
-  font-size: 4.2em;
+  font-size: 3.6rem;
   color:red;
-  padding-top:35px;
+  padding-top:10px;
+  font-weight:bold;
 }
-.banner .mission p{
-  text-align:center;
-  padding-top:50px;
+.banner .mission h2{
+  text-align:right;
+  padding-top:35px;
   color:white;
-  font-size: 1.6em;
-  font-style: italic;
+  font-size: 3.3em;
+  /* font-style: italic; */
   font-weight: bold;
+}
+.banner .mission h3{
+  text-align: right;
+  padding-top: 10px;
+  color: white;
+  font-size: 1.4rem;
+  /* font-style: italic; */
 }
 nav{
   height:70px;
@@ -90,15 +96,18 @@ nav ul li a img{
   margin-left: auto;
   margin-right: auto;
 }
-
 .title{
-  width:97%;
-  height: 54px;
-  margin: auto;
+  width:300px;
+  height:60px;
+  background-color: red;
+  margin-bottom: -15px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 2px 1px 1px;
 }
 .title h2{
   text-align: center;
-  font-size: 2.8em;
+  font-size: 2.6em;
 }
 .lastest_news ul li{
   list-style: none;
@@ -111,20 +120,21 @@ nav ul li a img{
 }
 .musicbox{
   display: flex;
-
+}
+.musicbox_figcaption{
+  position: relative;
+  margin-left: 270px;
 }
 .musicbox:nth-child(2){
   background-color: #bfd5e3;
 }
 .musicbox:nth-child(3){
-  flex-direction: row-reverse;
   background-color: #b71214;
 }
 .musicbox:nth-child(4){
   background-color: #b1ac86;
 }
 .musicbox:nth-child(5){
-  flex-direction: row-reverse;
   background-color: #090d0e;
 }
 .musicbox:nth-child(5) p{
@@ -136,12 +146,14 @@ nav ul li a img{
   border-radius: 3px;
 }
 .musicbox_figcaption p{
-  font-size: 1.2rem;
-  max-width: 470px;
-  text-align: center;
+  font-size: 1.1rem;
+  max-width: 450px;
+  text-align:right;
+}
+.musicbox .musicbox_figcaption p::first-letter{
+  font-weight: bolder;
 }
 footer{
-  margin-bottom: -15px;
   text-align: center;
   box-shadow: 3px 3px 3px;
 }
