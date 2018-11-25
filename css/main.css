@@ -74,9 +74,8 @@ nav ul li a {
 
 }
 nav ul li a:hover{
-  color:red;
-  background-color:grey;
-  border-radius: 5px;
+  background-color:red;
+  border-radius: 3px;
 }
 
 nav ul li a img{
@@ -98,7 +97,7 @@ nav ul li a img{
 }
 .title{
   width:300px;
-  height:60px;
+  height:55px;
   background-color: red;
   margin-bottom: -15px;
   position: relative;
@@ -107,7 +106,7 @@ nav ul li a img{
 }
 .title h2{
   text-align: center;
-  font-size: 2.6em;
+  font-size: 2.4em;
 }
 .lastest_news ul li{
   list-style: none;
@@ -123,7 +122,7 @@ nav ul li a img{
 }
 .musicbox_figcaption{
   position: relative;
-  margin-left: 270px;
+  padding-left: 14px;
 }
 .musicbox:nth-child(2){
   background-color: #bfd5e3;
@@ -147,8 +146,8 @@ nav ul li a img{
 }
 .musicbox_figcaption p{
   font-size: 1.1rem;
-  max-width: 450px;
-  text-align:right;
+  max-width: 500px;
+  text-align:left;
 }
 .musicbox .musicbox_figcaption p::first-letter{
   font-weight: bolder;
