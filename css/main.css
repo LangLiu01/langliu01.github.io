@@ -14,48 +14,37 @@ body{
   margin-right:auto;
   margin-top:0px;
   padding-top:1px;
-  background-image: url(../pics/tarlorswift.jpg);
+  background-image: url(../pics/header.jpeg);
   background-size:contain;
+  background-color: black;
   background-repeat: no-repeat;
-  background-color: #252f3b;
-}
-.mission{
-  position: relative;
-  float: right;
 }
 .banner .mission h1{
-  text-align:center;
+  text-align:left;
   font-size: 3.6rem;
   color:red;
   padding-top:10px;
   font-weight:bold;
 }
 .banner .mission h2{
-  text-align:right;
-  padding-top:35px;
-  color:white;
-  font-size: 3.3em;
-  /* font-style: italic; */
+  text-align:left;
+  padding-top:120px;
+  color: yellow;
+  font-size: 3em;
   font-weight: bold;
 }
 .banner .mission h3{
-  text-align: right;
+  text-align: left;
   padding-top: 10px;
-  color: white;
-  font-size: 1.4rem;
-  /* font-style: italic; */
+  color: blue;
+  font-size: 1.8rem;
 }
 nav{
   height:70px;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 20px;
-  border-bottom: 2px solid;
+  text-align:left;
   padding-left: 0px;
   padding-right: 0px;
-
   background-color: Black;;
-
 }
 nav ul {
   display: inline-flex;
@@ -63,15 +52,13 @@ nav ul {
 }
 nav ul li{
   list-style: none;
-  padding-right: 25px;
+  padding-right: 15px;
 }
-
 nav ul li a {
   font-size:1.8em;
   list-style: none;
   text-decoration: none;
   color: white;
-
 }
 nav ul li a:hover{
   background-color:red;
@@ -84,29 +71,12 @@ nav ul li a img{
   padding-right:2px;
 }
 
-#news{
-    margin-bottom: 10px;
-}
 .lastest_news {
-  width: 50%;
-  -webkit-column-count:2;
-  -moz-column-count:2;
-  column-count:2;
-  margin-left: auto;
-  margin-right: auto;
-}
-.title{
-  width:300px;
-  height:55px;
-  background-color: red;
-  margin-bottom: -15px;
-  position: relative;
-  z-index: 2;
-  box-shadow: 2px 1px 1px;
-}
-.title h2{
-  text-align: center;
-  font-size: 2.4em;
+  margin-top: -20px;
+  margin-bottom: -31px;
+  text-align:left;
+  padding-right: 25px;
+  /* background-color: black; */
 }
 .lastest_news ul li{
   list-style: none;
@@ -117,12 +87,54 @@ nav ul li a img{
 .lastest_news ul li a {
   text-decoration: none;
 }
+.title{
+  width:300px;
+  height:55px;
+  background-color:#cbccc7;
+  /* margin-bottom: -20px;
+  position: relative;
+  z-index: 3; */
+  box-shadow: 2px 1px 1px;
+}
+.title h2{
+  color: red;
+  text-align: center;
+  font-size: 2.4em;
+}
+
+#news{
+    background-color: #f5d8d2;
+}
+#news .blogs h2,p{;
+    text-align:left;
+}
+#news .blogs p{
+  width:35em;
+  word-wrap:break-word;
+}
+.blogs h2{
+  font-weight: bolder;
+}
 .musicbox{
   display: flex;
+  /* flex-direction: row-reverse; */
 }
 .musicbox_figcaption{
   position: relative;
-  padding-left: 14px;
+  padding-right: 14px;
+}
+.musicbox img{
+  width: 450px;
+  height: 450px;
+  border-radius: 3px;
+}
+.musicbox_figcaption p{
+  font-size: 1.1rem;
+  max-width: 500px;
+  text-align:left;
+}
+.musicbox .musicbox_figcaption p::first-letter{
+  font-weight: bolder;
 }
 .musicbox:nth-child(2){
   background-color: #bfd5e3;
@@ -139,20 +151,8 @@ nav ul li a img{
 .musicbox:nth-child(5) p{
   color: white;
 }
-.musicbox img{
-  width: 450px;
-  height: 450px;
-  border-radius: 3px;
-}
-.musicbox_figcaption p{
-  font-size: 1.1rem;
-  max-width: 500px;
-  text-align:left;
-}
-.musicbox .musicbox_figcaption p::first-letter{
-  font-weight: bolder;
-}
+
 footer{
-  text-align: center;
+  text-align: left;
   box-shadow: 3px 3px 3px;
 }
