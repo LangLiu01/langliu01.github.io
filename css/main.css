@@ -159,16 +159,25 @@ nav ul li a img{
 
 #wishlist {
   display:flex;
+    background-color: #41c9d9;
 }
 .wishlist{
+
   display: inline-flex;
+
 }
 fieldset{
+      flex-grow:1;
   box-shadow: 3px 3px 3px;
   border-radius: 2px;
-  width: 200px;
+  /* width: 200px; */
+
   background-image: linear-gradient(to top right,#fed46e 60%,#ba9f53);
 }
+fieldset h3,h4{
+  color:#6a236f;
+}
+
 footer{
   display:flex;
   background-color: black;
