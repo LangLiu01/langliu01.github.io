@@ -28,18 +28,19 @@ body{
 .banner .mission h2{
   text-align:left;
   padding-top:120px;
-  color: yellow;
-  font-size: 3em;
+  padding-left: 10px;
+  color: red;
+  font-size: 3rem;
   font-weight: bold;
 }
 .banner .mission h3{
   text-align: left;
   padding-top: 10px;
-  color: blue;
+  padding-left: 10px;
+  color:green;
   font-size: 1.8rem;
 }
 nav{
-  /* height:70px; */
   display:flex;
   text-align:left;
   padding-left: 0px;
@@ -55,7 +56,7 @@ nav ul li{
   padding-right: 15px;
 }
 nav ul li a {
-  font-size:1.8em;
+  font-size:1.8rem;
   list-style: none;
   text-decoration: none;
   color: white;
@@ -70,6 +71,7 @@ nav ul li a img{
   padding-right:2px;
 }
 .lastest_news {
+  background-color: orange;
   display: flex;
   text-align:left;
   padding-left: 25px;
@@ -80,10 +82,14 @@ nav ul li a img{
   list-style: none;
 }
 .lastest_news ul,li,a{
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
 .lastest_news ul li a {
+  color: green;
   text-decoration: none;
+}
+.lastest_news ul li a:hover{
+  color: purple;
 }
 .title{
   display: flex;
@@ -94,7 +100,7 @@ nav ul li a img{
   color: red;
   text-align: left;
   padding-left: 20px;
-  font-size: 2.4em;
+  font-size: 2rem;
   text-decoration: underline;
 }
 
@@ -106,16 +112,11 @@ nav ul li a img{
     text-align:left;
     padding-left: 10px;
 }
-#news .blogs p{
-  /* width:47em;
-  word-wrap:break-word; */
-}
 .blogs h2{
   font-weight: bolder;
 }
 .musicbox{
   display: flex;
-  /* flex-direction: row-reverse; */
 }
 .musicbox_figcaption{
   position: relative;
@@ -130,6 +131,12 @@ nav ul li a img{
   font-size: 1.1rem;
   max-width: 500px;
   text-align:left;
+}
+.musicbox_figcaption h2{
+  text-align: left;
+  padding-left: 20px;
+  color: green;
+  font-weight: bold;
 }
 .musicbox .musicbox_figcaption p::first-letter{
   font-weight: bolder;
@@ -149,6 +156,19 @@ nav ul li a img{
 .musicbox:nth-child(5) p{
   color: white;
 }
+
+#wishlist {
+  display:flex;
+}
+.wishlist{
+  display: inline-flex;
+}
+fieldset{
+  box-shadow: 3px 3px 3px;
+  border-radius: 2px;
+  width: 200px;
+  background-image: linear-gradient(to top right,#fed46e 60%,#ba9f53);
+}
 footer{
   display:flex;
   background-color: black;
@@ -158,4 +178,7 @@ footer{
 footer p{
   padding-left: 5px;
   color: white;
+}
+footer a{
+  color: red;
 }

@@ -7,7 +7,7 @@
 <script src="js/modernizr-custom.js"></script>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js">	</script>
 <script type="text/javascript">
-	
+
 </script>
 <body>
 	<div class="banner" role="banner">
@@ -23,9 +23,9 @@
 			<li> <a href="index.html"> <img src="sources/icons/home-white.png"> Home</li>
 			<li><a href="#news"><img src="sources/icons/edit-white.png" >News</a></li>
 			<li><a href="#fun"> <img src="sources/icons/heart-white.png">Favorite</a><li>
-			<li><a href="html/list.html"> <img src="sources/icons/shop-white.png">WishList</a></li>
+			<li><a href="#wishlist"> <img src="sources/icons/shop-white.png">WishList</a></li>
 			<li><a href="html/about.html"> <img src="sources/icons/user-white.png">About</a></li>
-			<li><a href="html/feedback.html"> <img src="sources/icons/phone-white.png"> Contract</a><li>
+			<li><a href="#contract"> <img src="sources/icons/phone-white.png"> Contract</a><li>
 		</ul>
 	</nav>
 	<!--End of NAV-->
@@ -75,6 +75,7 @@
 
 			<div class="musicbox_figcaption">
 				<figcaption>
+					<h2>Joanne</h2>
 					<p>Joanne is the fifth studio album by American singer Lady Gaga.
 						The album era marked a change in Gaga's visual appearance, embodying a country-oriented look,
 						 consisting mainly of a pink, wide-brimmed hat and usage of pastel colors, evoking the 1970s.
@@ -93,7 +94,9 @@
 		<div class="musicbox">
 
 			<div class="musicbox_figcaption">
-				<figcaption> <p>Lucy Dacus (born May 2, 1995) is an American indie rock singer-songwriter from Richmond,
+				<figcaption>
+					<h2>Night Shift</h2>
+					<p>Lucy Dacus (born May 2, 1995) is an American indie rock singer-songwriter from Richmond,
 					 Virginia.She has released two critically acclaimed albums:
 					  No Burden (2016) and Historian (2018).Dacus first performed in New York in March 2015.
 						 Her first single, "I Don't Wanna Be Funny Anymore," premiered in November 2015. Her debut album,
@@ -108,7 +111,9 @@
 		<div class="musicbox">
 
 			<div class="musicbox_figcaption">
-				<figcaption> <p>High as Hope is the fourth studio album by the English indie rock band Florence and the Machine,
+				<figcaption>
+					<h2>High As Hope</h2>
+					<p>High as Hope is the fourth studio album by the English indie rock band Florence and the Machine,
 					 released on 29 June 2018 by Republic Records and Virgin EMI Records.
 					 It was preceded by the singles "Sky Full of Song" and "Hunger".
 					 "Patricia" was released as the third single of the album on 10 August, 2018.
@@ -126,6 +131,7 @@
 
 				<div class="musicbox_figcaption">
 					<figcaption>
+						<h2>Random Access Memories</h2>
 						<p>Random Access Memories is the fourth studio album by French electronic music duo Daft Punk.
 							It was released on 17 May 2013, by the duo's imprint Daft Life and Columbia Records.
 							The album pays tribute to the late 1970s and early 1980s American music,
@@ -139,8 +145,44 @@
 				</div>
 		</div>
 	</div>
+</div>
+	<div class="title">
+		<h2>My Wish</h2>
+	</div>
+<div id="wishlist">
+	<div class="notebook">
+			<form class="wishlist" action="index.html" method="post">
+				<fieldset>
+					<h3>Wish of Next Year</h3>
+					Have a girlfriend	<input type="checkbox" name="wishlist" value="girlfriend"><br>
+					Watch a action movie	<input type="checkbox" name="wishlist" value="watchmovie"><br>
+					Cook a meal	<input type="checkbox" name="wishlist" value="cook"><br>
+					Write some blogs	<input type ="checkbox" name="wishlist" value="writeblog" check="checked"><br>
+				</fieldset>
+				<fieldset>
+					<h4>I would like to go home</h4>
+					<p>I want to be a movie star</p>
+					<p>Rock and Roll,baby! </p>
+				</fieldset>
+				<fieldset>
+					<h4>Do you think What I think?</h4>
+					<p>Do you feel my pain?</p>
+					<p>What do you want form me?</p>
+					<p>I am here,alone</p>
+				</fieldset>
+				<fieldset>
+					<h4>How I wish</h4>
+					Read many books<input type="radio" name="Wishlist" value="readbook"><br>
+					Buy a bike<input type="radio"><br>
+					Become a WebDeveloper<input type="radio" check="checked"><br>
+					Make Game<input type="radio" ><br>
+					Listen to Music<input type="radio"><br>
+				</fieldset>
+			</form>
+	</div>
+</div>
 	<!--End of main-->
-	<footer role="contentinfo">
+	<footer id="contract" role="contentinfo">
 		<p><small>This site is designed by Lang,if you want to give feedback ,<br>
 			send email to <email>liulang1101@163.com</email><br>or leave message in the feedback page.</small></p>
 		<p><a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license">Creative Commons Attribution
