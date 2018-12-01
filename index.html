@@ -10,30 +10,33 @@
 
 </script>
 <body>
-	<div class="banner" role="banner">
-		<div class="mission">
-			<h1>What Do You Want?</h1>
-			<h2>The Futrue</h2>
-			 <h3>I Want To Live  My Way.</h3>
-		</div>
-	</div>
-	<!--End of Banner-->
 	<nav role="navigation">
 		<ul>
 			<li> <a href="index.html"> <img src="sources/icons/home-white.png"> Home</li>
 			<li><a href="#news"><img src="sources/icons/edit-white.png" >News</a></li>
 			<li><a href="#fun"> <img src="sources/icons/heart-white.png">Favorite</a><li>
 			<li><a href="#wishlist"> <img src="sources/icons/shop-white.png">WishList</a></li>
-			<li><a href="html/about.html"> <img src="sources/icons/user-white.png">About</a></li>
+			<li><a href=""> <img src="sources/icons/user-white.png">About</a></li>
 			<li><a href="#contract"> <img src="sources/icons/phone-white.png"> Contract</a><li>
+			<li> <a href="html/game.html">Game</a></li>
 		</ul>
 	</nav>
 	<!--End of NAV-->
-
+	<div class="banner" role="banner">
+		<div class="mission">
+			<h1>It's My Life</h1>
+			<h3><b>I</b> Want to Live My Way</h3>
+		</div>
+		<div class="mission_img">
+			<img src="pics/flipping_off.jpg" alt="Steve Jobs">
+		</div>
+	</div>
+	<!--End of Banner-->
 
 	<div class="fresh_news">
 
 		<div class="lastest_news">
+			<!-- <img src="pics/audrey_hepburn2.png" alt="Audrey Hepburn"> -->
 			<div class="ullist">
 						<ul>
 							<li><a href="blog/gitinstall.html"> Git 安装</a></li>
@@ -41,21 +44,14 @@
 							<li><a href="blog/alongwaytogo.html">A long way to go</a></li>
 							<li> <a href="blog/howtoinstallatom.html">Atom编辑器安装</a> </li>
 							<li> <a href="www.babeljs.io">Babel下一代JS编译器</a> </li>
-							<li> <a href="www.Limesurvey.org">LimeSurvey 免费在线问卷调查</a> </li>
 						</ul>
 
 			</div>
-
-
-
-
 		</div>
 		<!--End of lastest new-->
 	</div>
 	<!--End of Fresh News-->
-	<div class="title">
-		<h2>What's New?</h2>
-	</div>
+
 	<section id= "news" role="main">
 
 		<div class="blogs">
@@ -68,9 +64,6 @@
 	</section>
 
 	<div id="fun">
-		<div class="title">
-			<h2>My Favorite</h2>
-		</div>
 		<div class="musicbox">
 
 			<div class="musicbox_figcaption">
@@ -106,6 +99,12 @@
 			</div>
 			<div class="musicbox_img">
 				<img src="pics/nightshift.jpg" alt="Night Shift by Lucy Dacus ">
+			</div>
+			<div class="musicbox_player">
+				<img src="pics/records.png" alt="Night Shift" >
+				<audio  controls>
+					<source src="sources/LucyDacus-NightShift.mp3" >
+				</audio>
 			</div>
 		</div>
 		<div class="musicbox">
@@ -143,44 +142,16 @@
 				<div class="musicbox_img">
 					<img src="pics/RAM.jpg" alt="Random Access Memories">
 				</div>
+				<div class="musicbox_player">
+					<img src="pics/records.png" alt="Random Access Memories">
+					<audio  controls>
+						<source src="sources/DaftPunk-GetLucky.mp3" >
+					</audio>
+				</div>
 		</div>
 	</div>
 </div>
-	<div class="title">
-		<h2>My Wish</h2>
-	</div>
-<div id="wishlist">
-	<div class="notebook">
-			<form class="wishlist" action="index.html" method="post">
-				<fieldset>
-					<h3>Wish of Next Year</h3>
-					Have a girlfriend	<input type="checkbox" name="wishlist" value="girlfriend"><br>
-					Watch a action movie	<input type="checkbox" name="wishlist" value="watchmovie"><br>
-					Cook a meal	<input type="checkbox" name="wishlist" value="cook"><br>
-					Write some blogs	<input type ="checkbox" name="wishlist" value="writeblog" check="checked"><br>
-				</fieldset>
-				<fieldset>
-					<h4>I would like to go home</h4>
-					<p>I want to be a movie star</p>
-					<p>Rock and Roll,baby! </p>
-				</fieldset>
-				<fieldset>
-					<h4>Do you think What I think?</h4>
-					<p>Do you feel my pain?</p>
-					<p>What do you want form me?</p>
-					<p>I am here,alone</p>
-				</fieldset>
-				<fieldset>
-					<h4>How I wish</h4>
-					Read many books<input type="radio" name="Wishlist" value="readbook"><br>
-					Buy a bike<input type="radio"><br>
-					Become a WebDeveloper<input type="radio" check="checked"><br>
-					Make Game<input type="radio" ><br>
-					Listen to Music<input type="radio"><br>
-				</fieldset>
-			</form>
-	</div>
-</div>
+
 	<!--End of main-->
 	<footer id="contract" role="contentinfo">
 		<p><small>This site is designed by Lang,if you want to give feedback ,<br>

@@ -3,49 +3,50 @@
     font-family:alice;
     src: url(../fonts/Alice.ttf);
 }
-
 body{
    padding: 0;
    margin: 0;
 }
 .banner{
-  height:500px;
+  display: flex;
   margin-left: auto;
   margin-right:auto;
   margin-top:0px;
   padding-top:1px;
-  background-image: url(../pics/header.jpeg);
-  background-size:cover;
-  background-repeat: no-repeat;
+  background-color: #adbdca;
 }
 .banner .mission h1{
+  width: 600px;
+  background-color: black;
+  font-family: serif;
   text-align:left;
-  font-size: 3.6rem;
-  color:red;
-  padding-top:10px;
-  font-weight:bold;
-}
-.banner .mission h2{
-  text-align:left;
-  padding-top:120px;
-  padding-left: 10px;
-  color: red;
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 4.4rem;
+  color:white;
+  padding-top:5px;
+  margin-left: 5px;
+  padding-left: 20px;
+  font-weight: 400;
 }
 .banner .mission h3{
   text-align: left;
-  padding-top: 10px;
-  padding-left: 10px;
-  color:green;
-  font-size: 1.8rem;
+  margin-top: 20px;
+  padding-top: 0px;
+  padding-left: 35px;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+.banner .mission b{
+  font-size: 8rem;
+  color: red;
+  font-weight: bolder;
+}
+.banner .mission_img img{
+  padding-left: 30px;
 }
 nav{
   display:flex;
   text-align:left;
-  padding-left: 0px;
-  padding-right: 0px;
-  background-color: Black;;
+  background-color:#bfd5e3;
 }
 nav ul {
   display: inline-flex;
@@ -58,11 +59,11 @@ nav ul li{
 nav ul li a {
   font-size:1.8rem;
   list-style: none;
+  color: blue;
   text-decoration: none;
-  color: white;
 }
 nav ul li a:hover{
-  background-color:red;
+  background-color:#adbdca;
   border-radius: 3px;
 }
 nav ul li a img{
@@ -71,12 +72,10 @@ nav ul li a img{
   padding-right:2px;
 }
 .lastest_news {
-  background-color: orange;
+  background-color:#bfd5e3;
   display: flex;
   text-align:left;
-  padding-left: 25px;
-}
-.lastest_news ul{
+  padding-left:20px;
 }
 .lastest_news ul li{
   list-style: none;
@@ -85,8 +84,9 @@ nav ul li a img{
     font-size: 1.1rem;
 }
 .lastest_news ul li a {
-  color: green;
+  color:black;
   text-decoration: none;
+  font-weight:bold;
 }
 .lastest_news ul li a:hover{
   color: purple;
@@ -103,7 +103,6 @@ nav ul li a img{
   font-size: 2rem;
   text-decoration: underline;
 }
-
 #news{
     display: flex;
     background-color: #f5d8d2;
@@ -127,6 +126,13 @@ nav ul li a img{
   height: 450px;
   border-radius: 3px;
 }
+.musicbox_player{
+  padding-left: 30px;
+}
+.musicbox .musicbox_player img{
+  width: 200px;
+  height: 200px;
+}
 .musicbox_figcaption p{
   font-size: 1.1rem;
   max-width: 500px;
@@ -141,41 +147,17 @@ nav ul li a img{
 .musicbox .musicbox_figcaption p::first-letter{
   font-weight: bolder;
 }
-.musicbox:nth-child(2){
+.musicbox:nth-child(1){
   background-color: #bfd5e3;
 }
-.musicbox:nth-child(3){
+.musicbox:nth-child(2){
   background-color: #b71214;
 }
-.musicbox:nth-child(4){
+.musicbox:nth-child(3){
   background-color: #b1ac86;
 }
-.musicbox:nth-child(5){
+.musicbox:nth-child(4){
   background-color: #090d0e;
-}
-.musicbox:nth-child(5) p{
-  color: white;
-}
-
-#wishlist {
-  display:flex;
-    background-color: #41c9d9;
-}
-.wishlist{
-
-  display: inline-flex;
-
-}
-fieldset{
-      flex-grow:1;
-  box-shadow: 3px 3px 3px;
-  border-radius: 2px;
-  /* width: 200px; */
-
-  background-image: linear-gradient(to top right,#fed46e 60%,#ba9f53);
-}
-fieldset h3,h4{
-  color:#6a236f;
 }
 
 footer{
