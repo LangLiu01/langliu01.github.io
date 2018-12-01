@@ -16,16 +16,25 @@ body{
   background-color: #adbdca;
 }
 .banner .mission h1{
-  width: 600px;
+  width: 520px;
   background-color: black;
   font-family: serif;
   text-align:left;
   font-size: 4.4rem;
   color:white;
-  padding-top:5px;
-  margin-left: 5px;
+  margin-left: 10px;
   padding-left: 20px;
   font-weight: 400;
+}
+.banner .mission h2{
+  width: 520px;
+  background-color:white;
+  font-family: monospace;
+  text-align: left;
+  color: blue;
+  margin-top: -45px;
+  margin-left: 10px;
+  padding-left: 20px;
 }
 .banner .mission h3{
   text-align: left;
@@ -41,7 +50,7 @@ body{
   font-weight: bolder;
 }
 .banner .mission_img img{
-  padding-left: 30px;
+  padding-left: 10px;
 }
 nav{
   display:flex;
